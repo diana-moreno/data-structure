@@ -16,7 +16,7 @@ body {
   justify-content: center;
   text-align: center;
 }
-.pile {
+.row {
   background-color: #80808070;
   width: 182px;
   height: 34px;

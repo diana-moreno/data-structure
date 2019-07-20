@@ -2,7 +2,7 @@
 function QueueDataStructure () {
   this.queueControl = []
   this.index = -1;
-  this.MAX_SIZE = pilesAccessDomRight.length;
+  this.MAX_SIZE = rowsAccessDomRight.length;
   this.isEmpty = function() {
     return this.queueControl.length === 0
   }
@@ -29,13 +29,13 @@ function QueueDataStructure () {
     }
   }
   this.addToDom = function(index) {
-    pilesAccessDomRight[index].innerHTML = this.queueControl[0]
-    pilesAccessDomRight[index].style.backgroundColor = "#2196f38c";
+    rowsAccessDomRight[index].innerHTML = this.queueControl[0]
+    rowsAccessDomRight[index].style.backgroundColor = "#2196f38c";
   }
   this.deleteToDom = function() {
-    for(let i = 0; i< pilesAccessDomRight.length-1; i++) {
-      pilesAccessDomRight[i].innerHTML = pilesAccessDomRight[i+1].innerHTML
-      pilesAccessDomRight[i].style.backgroundColor = pilesAccessDomRight[i+1].style.backgroundColor
+    for(let i = 0; i< rowsAccessDomRight.length-1; i++) {
+      rowsAccessDomRight[i].innerHTML = rowsAccessDomRight[i+1].innerHTML
+      rowsAccessDomRight[i].style.backgroundColor = rowsAccessDomRight[i+1].style.backgroundColor
     }
   }
 }

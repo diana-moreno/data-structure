@@ -1,11 +1,11 @@
 //ACCES TO DOM
-const piles = ['pile-10', 'pile-9', 'pile-8', 'pile-7', 'pile-6', 'pile-5', 'pile-4', 'pile-3', 'pile-2', 'pile-1']
+const rows = ['row-10', 'row-9', 'row-8', 'row-7', 'row-6', 'row-5', 'row-4', 'row-3', 'row-2', 'row-1']
 
-const pilesAccessDomLeft = [];
-const pilesAccessDomRight = [];
+const rowsAccessDomLeft = [];
+const rowsAccessDomRight = [];
 
-piles.forEach(elem => pilesAccessDomLeft.push(document.getElementsByClassName(elem)[0]))
-piles.forEach(elem => pilesAccessDomRight.push(document.getElementsByClassName(elem)[1]))
+rows.forEach(elem => rowsAccessDomLeft.push(document.getElementsByClassName(elem)[0]))
+rows.forEach(elem => rowsAccessDomRight.push(document.getElementsByClassName(elem)[1]))
 
 
 //STACK ACCES TO DOM AND EVENTS

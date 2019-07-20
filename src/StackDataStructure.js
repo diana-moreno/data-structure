@@ -2,7 +2,7 @@
 function StackDataStructure () {
   this.stackControl = []
   this.index = -1
-  this.MAX_SIZE = pilesAccessDomLeft.length;
+  this.MAX_SIZE = rowsAccessDomLeft.length;
   this.isEmpty = function() {
     return this.stackControl.length === 0
   }
@@ -28,12 +28,12 @@ function StackDataStructure () {
     }
   }
   this.addToDom = function(index) {
-    pilesAccessDomLeft[index].innerHTML = this.stackControl[index]
-    pilesAccessDomLeft[index].style.backgroundColor = "#2196f38c";
+    rowsAccessDomLeft[index].innerHTML = this.stackControl[index]
+    rowsAccessDomLeft[index].style.backgroundColor = "#2196f38c";
   }
   this.deleteToDom = function(index) {
-    pilesAccessDomLeft[index].innerHTML = ''
-    pilesAccessDomLeft[index].style.backgroundColor = "#80808070";
+    rowsAccessDomLeft[index].innerHTML = ''
+    rowsAccessDomLeft[index].style.backgroundColor = "#80808070";
   }
 }
 
